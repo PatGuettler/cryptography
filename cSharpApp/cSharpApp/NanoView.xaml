@@ -8,8 +8,20 @@
             
             <StackPanel Orientation="Horizontal">
                 <Label>Current Eth Price:</Label>
-                <TextBlock VerticalAlignment="Center" Width="100">Mock</TextBlock>
+                <TextBlock VerticalAlignment="Center" Width="100" Text="{Binding EthUsd}"></TextBlock>
             </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label>Average Hash For The Last 6 Hours:</Label>
+                <TextBlock VerticalAlignment="Center" Width="100" Text="{Binding AvgHash}"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label>Currrent NanoPool Account Balance</Label>
+                <TextBlock VerticalAlignment="Center" Width="100" Text="{Binding AccountBalance}"></TextBlock>
+            </StackPanel>
+
+
         </StackPanel>
         
     </Grid>
